@@ -30,3 +30,5 @@ mainClassName = 'poker.PokerPackage'
 task wrapper(type: Wrapper) {
   gradleVersion = '2.2'
 }
+
+task stage(dependsOn: ['assemble'])
