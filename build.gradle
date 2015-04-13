@@ -31,4 +31,4 @@ task wrapper(type: Wrapper) {
   gradleVersion = '2.2'
 }
 
-task stage(dependsOn: ['assemble'])
+task stage(dependsOn: ['installApp'])
