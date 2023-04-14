@@ -29,18 +29,23 @@ class Player {
                         println("${card.get("rank")}, ${card.get("suit")}")
                         println("XXX")
                         if(card.getString("rank").equals("A")){
+                            println("AAAA")
                             bolAce = true
                         }
                         if(card.getString("rank").equals("K")){
+                            println("KKKK")
                             bolAce = true
                         }
                         if(card.getString("rank").equals("D")){
+                            println("DDDD")
                             bolAce = true
                         }
                     }
                     if(bolAce){
+                        println("1111")
                         return player.getInt("stack")
                     }else{
+                        println("2222")
                         return 0
                     }
                 }
