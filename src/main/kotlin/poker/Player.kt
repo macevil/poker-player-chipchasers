@@ -6,6 +6,7 @@ import org.json.JSONArray
 class Player {
 
     fun betRequest(game_state: JSONObject): Int {
+        return 0
         try{
             println("chipchasers0")
 
