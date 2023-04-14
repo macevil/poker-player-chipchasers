@@ -17,11 +17,15 @@ class Player {
                 println("${player.get("bet")}, ${player.get("stack")}, ${player.get("name")}")
                 if(player.get("name")=="chipchasers"){
                     val cards = player.getJSONArray("hole_cards")
+                    val bolAce = false
                     for (i in 0 until cards.length()) {
                         val card = cards.getJSONObject(i)
                         println("${card.get("rank")}, ${card.get("suit")}")
+                        if(card.get("rank")==A){
+                            bolAce = true
+                        }
                     }
-                    if(card.get("rank")==A){
+                    if(bolAce){
                         return player.getInt("stack")
                     }else{
                         return 0
