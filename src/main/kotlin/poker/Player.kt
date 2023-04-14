@@ -5,14 +5,14 @@ import org.json.JSONObject
 class Player {
 
     fun betRequest(game_state: JSONObject): Int {
-        println(game_state.getString("players"))
-        return 20
+        println("chipchasers")
+        return 0
     }
 
     fun showdown() {
     }
 
     fun version(): String {
-        return "Kotlin Player 0.0.1"
+        return "Kotlin Player 0.0.10"
     }
 }
