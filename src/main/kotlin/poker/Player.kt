@@ -21,13 +21,13 @@ class Player {
                         val card = cards.getJSONObject(i)
                         println("${card.get("rank")}, ${card.get("suit")}")
                     } 
-                    return player.get("stack").toInt()
+                    return player.getInt("stack")
                 } else{
                     return 0
                 }
             }
         } catch (e: Excption){
-return 0
+            return 0
         }
     }
 
