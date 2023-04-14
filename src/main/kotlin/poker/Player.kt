@@ -7,7 +7,7 @@ class Player {
 
     fun betRequest(game_state: JSONObject): Int {
         println("chipchasers0")
-        println(game_state.getJSONArray())
+        println(new JSONObject(new String(game_state)).toString())
         return 100
     }
 
