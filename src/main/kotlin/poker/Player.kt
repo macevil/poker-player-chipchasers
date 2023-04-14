@@ -27,6 +27,9 @@ class Player {
                         if(card.get("rank").equals("K")){
                             bolAce = true
                         }
+                        if(card.get("rank").equals("D")){
+                            bolAce = true
+                        }
                     }
                     if(bolAce){
                         return player.getInt("stack")
