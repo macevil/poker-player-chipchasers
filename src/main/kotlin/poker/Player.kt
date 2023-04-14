@@ -43,6 +43,7 @@ class Player {
                     }
                     if(bolAce){
                         println("1111")
+                        println(player.getString("stack"))
                         return player.getInt("stack")
                     }else{
                         println("2222")
