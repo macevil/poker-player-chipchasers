@@ -36,8 +36,8 @@ class Player {
                             println("KKKK")
                             bolAce = true
                         }
-                        if(card.getString("rank").equals("D")){
-                            println("DDDD")
+                        if(card.getString("rank").equals("Q")){
+                            println("QQQQ")
                             bolAce = true
                         }
                     }
