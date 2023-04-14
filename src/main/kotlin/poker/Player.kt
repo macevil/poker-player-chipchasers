@@ -1,6 +1,6 @@
 package poker
 
-import org.json.JSONObject
+import org.json.*
 
 class Player {
 
