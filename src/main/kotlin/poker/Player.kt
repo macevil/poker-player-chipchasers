@@ -14,7 +14,12 @@ class Player {
         for (i in 0 until players.length()) {
             val player = players.getJSONObject(i)
             println("${player.get("bet")}, ${player.get("stack")}, ${player.get("name")}")
-            //if(${player.get("name")}.equals("test")){
+            val cards = player.getJSONArray("hole_cards")
+            for (i in 0 until cards.length()) {
+                val card = cards.getJSONObject(i)
+                println("${card.get("rank")}, ${card.get("suit")}")
+            }    
+            //if(${player.get("name")}.equals("")){
             //    println("test")
             //}else{
             //    println("test2")
