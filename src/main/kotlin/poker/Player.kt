@@ -21,10 +21,10 @@ class Player {
                     for (i in 0 until cards.length()) {
                         val card = cards.getJSONObject(i)
                         println("${card.get("rank")}, ${card.get("suit")}")
-                        if(card.get("rank")=="A"){
+                        if(card.get("rank").equals("A", true)){
                             bolAce = true
                         }
-                        if(card.get("rank")=="K"){
+                        if(card.get("rank").equals("K", true)){
                             bolAce = true
                         }
                     }
