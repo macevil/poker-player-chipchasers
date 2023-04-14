@@ -28,6 +28,8 @@ class Player {
             }
         } catch (e: Exception){
             return 0
+        }finally{
+            return 0
         }
     }
 
