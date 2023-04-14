@@ -22,13 +22,16 @@ class Player {
                         val card = cards.getJSONObject(i)
                         println("${card.get("rank")}, ${card.get("suit")}")
                         if(card.getString("rank").equals("A")){
-                            bolAce = true
+                            println("A")
+                            return player.getInt("stack")
                         }
                         if(card.getString("rank").equals("K")){
-                            bolAce = true
+                            println("K")
+                            return player.getInt("stack")
                         }
                         if(card.getString("rank").equals("D")){
-                            bolAce = true
+                            println("D")
+                            return player.getInt("stack")
                         }
                     }
                     if(bolAce){
