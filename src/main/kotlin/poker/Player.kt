@@ -14,23 +14,23 @@ class Player {
             val players = game_state.getJSONArray("players")
             for (i in 0 until players.length()) {
                 val player = players.getJSONObject(i)
-                println("${player.get("bet")}, ${player.get("stack")}, ${player.get("name")}")
                 if(player.get("name")=="chipchasers"){
                     val cards = player.getJSONArray("hole_cards")
                     var bolAce = false
                     for (i in 0 until cards.length()) {
                         val card = cards.getJSONObject(i)
                         println("${card.get("rank")}, ${card.get("suit")}")
+                        println("XXX")
                         if(card.getString("rank").equals("A")){
-                            println("A")
+                            println("chipA")
                             return player.getInt("stack")
                         }
                         if(card.getString("rank").equals("K")){
-                            println("K")
+                            println("chipK")
                             return player.getInt("stack")
                         }
                         if(card.getString("rank").equals("D")){
-                            println("D")
+                            println("chipD")
                             return player.getInt("stack")
                         }
                     }
