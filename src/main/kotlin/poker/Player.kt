@@ -26,7 +26,7 @@ class Player {
                     return 0
                 }
             }
-        } catch (e: Excption){
+        } catch (e: Exception){
             return 0
         }
     }
