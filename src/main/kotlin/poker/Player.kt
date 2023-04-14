@@ -10,8 +10,7 @@ class Player {
 
         println(game_state.get("community_cards"))
         game_state.get("in_action")
-        println( game_state.get("players"))
-        println( game_state.get("players").getJSONArray())
+        println( game_state.getJSONArray("players"))
         game_state.get("tournament_id")
         game_state.get("current_buy_in")
         game_state.get("round")
