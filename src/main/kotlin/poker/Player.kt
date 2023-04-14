@@ -46,11 +46,7 @@ class Player {
                         println(""+player.getInt("stack"))
                         var round = game_state.getInt("round")
                         println(""+round)
-                        if(round > 0){
-                            return player.getInt("stack")/2
-                        }else{
-                            return player.getInt("stack")
-                        }
+                        return player.getInt("stack")/2
                     }else{
                         println("2222")
                         return 0
