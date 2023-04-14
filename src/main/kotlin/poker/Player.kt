@@ -5,7 +5,6 @@ import org.json.JSONObject
 class Player {
 
     fun betRequest(game_state: JSONObject): Int {
-        #game_state.players.forEach { println( "jolo: " it) }
         return 5
     }
 
