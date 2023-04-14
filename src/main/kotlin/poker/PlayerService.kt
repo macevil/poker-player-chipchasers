@@ -14,7 +14,6 @@ fun main(args: Array<String>) {
             "bet_request" -> {
                 val gameState = request.bodyParams["game_state"]
                 println(gameState)
-                println(gameState.javaClass.kotlin)
 
                 if (gameState == null) {
                     "Missing game_state!"
