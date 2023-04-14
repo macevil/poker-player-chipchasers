@@ -7,8 +7,10 @@ class Player {
 
     fun betRequest(game_state: JSONObject): Int {
         println("chipchasers0")
-        val test = JSONObject(game_state)
-        println(game_state.keys().toString())
+        val keys = game_state.keys()
+        keys.forEach { (key, value) -> 
+            println("$key -> $value")
+        }
         return 100
     }
 
