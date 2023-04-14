@@ -10,7 +10,10 @@ class Player {
 
         println(game_state.get("community_cards"))
         game_state.get("in_action")
-        println(game_state.getJSONArray("players"))
+        val players = game_state.getJSONArray("players")
+        for (int i=0; i < players.length(); i++) {
+            players.getJSONObject(i);
+        }
         println(game_state.getJSONArray("players").get(4).get("stack"))
         game_state.get("tournament_id")
         game_state.get("current_buy_in")
