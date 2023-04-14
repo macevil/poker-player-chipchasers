@@ -33,7 +33,7 @@ class Player {
         game_state.get("small_blind")
         game_state.get("game_id")
 
-        return 1000
+        return 6
     }
 
     fun showdown() {
