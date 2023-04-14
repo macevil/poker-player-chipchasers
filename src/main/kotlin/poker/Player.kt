@@ -1,6 +1,6 @@
 package poker
 
-import org.json.*
+import kotlin.*
 
 class Player {
 
