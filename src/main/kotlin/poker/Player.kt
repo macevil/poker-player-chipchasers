@@ -20,8 +20,12 @@ class Player {
                     for (i in 0 until cards.length()) {
                         val card = cards.getJSONObject(i)
                         println("${card.get("rank")}, ${card.get("suit")}")
-                    } 
-                    return player.getInt("stack")
+                    }
+                    if(card.get("rank")==A){
+                        return player.getInt("stack")
+                    }else{
+                        return 0
+                    }
                 } else{
                     return 0
                 }
@@ -38,7 +42,7 @@ class Player {
     }
 
     fun version(): String {
-        return "Kotlin Player 0.0.1345"
+        return "Kotlin Player 0.0.2"
     }
 
 }
