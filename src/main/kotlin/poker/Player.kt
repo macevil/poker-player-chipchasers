@@ -14,11 +14,13 @@ class Player {
         for (i in 0 until players.length()) {
             val player = players.getJSONObject(i)
             println("${player.get("bet")}, ${player.get("stack")}, ${player.get("name")}")
-            // val cards = player.getJSONArray("hole_cards")
-            // for (i in 0 until cards.length()) {
-                //val card = cards.getJSONObject(i)
-                //println("${card.get("rank")}, ${card.get("suit")}")
-            //}    
+            if(${player.get("name")}.equals("chipschasers")){
+                val cards = player.getJSONArray("hole_cards")
+                for (i in 0 until cards.length()) {
+                    val card = cards.getJSONObject(i)
+                    println("${card.get("rank")}, ${card.get("suit")}")
+                }   
+            } 
         }
         game_state.get("tournament_id")
         game_state.get("current_buy_in")
