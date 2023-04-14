@@ -5,9 +5,11 @@ import org.json.JSONArray
 
 class Player {
 
-    fun betRequest(game_state: JSONObject): Int {
+    fun betRequest(game_state: String): Int {
         println("chipchasers0")
         println(game_state)
+        val json = JSONObject(gameState)
+        println(json)
         return 100
     }
 
