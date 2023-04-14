@@ -12,9 +12,10 @@ class Player {
     }
 
     fun showdown() {
+        println("chipchasers showdown")
     }
 
     fun version(): String {
-        return "Kotlin Player 0.0.10"
+        return "Kotlin Player 0.0.134"
     }
 }
