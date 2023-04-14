@@ -14,6 +14,7 @@ class Player {
             val players = game_state.getJSONArray("players")
             println(players.length())
             for (i in 0 until players.length()) {
+                println(i)
                 val player = players.getJSONObject(i)
                 println("SLAYER")
                 val name = player.getString("name")
@@ -45,8 +46,6 @@ class Player {
                     }else{
                         return 0
                     }
-                } else{
-                    return 0
                 }
             }
         } catch (e: Exception){
