@@ -11,6 +11,7 @@ class Player {
         println(game_state.get("community_cards"))
         game_state.get("in_action")
         println( game_state.get("players"))
+        println(  game_state.get("players")[1])
         game_state.get("tournament_id")
         game_state.get("current_buy_in")
         game_state.get("round")
@@ -23,7 +24,7 @@ class Player {
         game_state.get("small_blind")
         game_state.get("game_id")
 
-        return 100
+        return 1000
     }
 
     fun showdown() {
