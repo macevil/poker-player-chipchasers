@@ -14,6 +14,7 @@ class Player {
             val players = game_state.getJSONArray("players")
             for (i in 0 until players.length()) {
                 val player = players.getJSONObject(i)
+                println("SLAYER")
                 if(player.get("name")=="chipchasers"){
                     val cards = player.getJSONArray("hole_cards")
                     var bolAce = false
