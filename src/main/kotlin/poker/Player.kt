@@ -19,22 +19,12 @@ class Player {
                 for (i in 0 until cards.length()) {
                     val card = cards.getJSONObject(i)
                     println("${card.get("rank")}, ${card.get("suit")}")
-                }   
-            } 
+                } 
+                return player.get("stack")
+            } else{
+                return 0
+            }
         }
-        game_state.get("tournament_id")
-        game_state.get("current_buy_in")
-        game_state.get("round")
-        game_state.get("pot")
-        game_state.get("minimum_raise")
-        game_state.get("big_blind")
-        game_state.get("orbits")
-        game_state.get("bet_index")
-        game_state.get("dealer")
-        game_state.get("small_blind")
-        game_state.get("game_id")
-
-        return 6
     }
 
     fun showdown() {
