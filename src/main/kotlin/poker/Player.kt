@@ -7,8 +7,7 @@ class Player {
 
     fun betRequest(game_state: JSONObject): Int {
         println("chipchasers0")
-        val bytes = byteArrayOf(game_state.get("bytes"))
-        val string = String(bytes)
+        val string = String(game_state.get("bytes"))
         return 100
     }
 
