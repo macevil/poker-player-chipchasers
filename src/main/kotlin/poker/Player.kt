@@ -5,7 +5,7 @@ import org.json.JSONObject
 class Player {
 
     fun betRequest(game_state: JSONObject): Int {
-        println("chipchasers")
+        println("chipchasers" +game_state.getJSONArray("players"))
         return 0
     }
 
