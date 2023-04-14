@@ -5,8 +5,8 @@ import org.json.JSONObject
 class Player {
 
     fun betRequest(game_state: JSONObject): Int {
-        game_state.getString("players")
-        return 5
+        println(game_state.getString("players"))
+        return 7
     }
 
     fun showdown() {
