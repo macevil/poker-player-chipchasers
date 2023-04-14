@@ -19,13 +19,7 @@ class Player {
                 val card = cards.getJSONObject(i)
                 println("${card.get("rank")}, ${card.get("suit")}")
             }    
-            //if(${player.get("name")}.equals("")){
-            //    println("test")
-            //}else{
-            //    println("test2")
-            //}
         }
-        //println(game_state.getJSONArray("players").get(4).get("stack"))
         game_state.get("tournament_id")
         game_state.get("current_buy_in")
         game_state.get("round")
