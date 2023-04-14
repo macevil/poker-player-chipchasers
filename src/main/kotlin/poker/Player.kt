@@ -44,7 +44,8 @@ class Player {
                     if(bolAce){
                         println("1111")
                         println(""+player.getInt("stack"))
-                        println("stack")
+                        var round = game_state.getInt("round")
+                        println(""+round)
                         return player.getInt("stack")
                     }else{
                         println("2222")
