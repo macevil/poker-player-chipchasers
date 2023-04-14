@@ -6,7 +6,7 @@ class Player {
 
     fun betRequest(game_state: JSONObject): Int {
         println("chipchasers0")
-        println(game_state.getJSONArray("players"))
+        println(getJSONArray("game_state"))
         println("chipchasers2")
         return 5
     }
@@ -16,6 +16,6 @@ class Player {
     }
 
     fun version(): String {
-        return "Kotlin Player 0.0.134"
+        return "Kotlin Player 0.0.1343"
     }
 }
