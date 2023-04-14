@@ -7,6 +7,7 @@ class Player {
 
     fun betRequest(game_state: Any): Int {
         println("chipchasers0")
+        println(game_state.javaClass.name)
         println(game_state)
         val json = JSONObject(game_state)
         println(json)
