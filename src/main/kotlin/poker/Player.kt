@@ -25,7 +25,7 @@ class Player {
             //    println("test2")
             //}
         }
-        println(game_state.getJSONArray("players").get(4).get("stack"))
+        //println(game_state.getJSONArray("players").get(4).get("stack"))
         game_state.get("tournament_id")
         game_state.get("current_buy_in")
         game_state.get("round")
