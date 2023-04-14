@@ -12,6 +12,7 @@ class Player {
             println(game_state.get("community_cards"))
             game_state.get("in_action")
             val players = game_state.getJSONArray("players")
+            println(players.length())
             for (i in 0 until players.length()) {
                 val player = players.getJSONObject(i)
                 println("SLAYER")
