@@ -13,6 +13,7 @@ fun main(args: Array<String>) {
         val result = when (action) {
             "bet_request" -> {
                 val gameState = request.bodyParams["game_state"]
+                println(request.bodyParams)
 
                 if (gameState == null) {
                     "Missing game_state!"
