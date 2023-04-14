@@ -16,6 +16,7 @@ class Player {
                 val player = players.getJSONObject(i)
                 println("SLAYER")
                 val name = player.getString("name")
+                println(name)
                 val chipchasers = "chipchasers"
                 if(name.equals(chipchasers)){
                     val cards = player.getJSONArray("hole_cards")
