@@ -11,8 +11,9 @@ class Player {
         println(game_state.get("community_cards"))
         game_state.get("in_action")
         val players = game_state.getJSONArray("players")
-        for (int i=0; i < players.length(); i++) {
-            players.getJSONObject(i);
+        for (i in 0 until players.length()) {
+            val player = players.getJSONObject(i)
+            println("${player.get("bet")}, ${player.get("stack")}, ${player.get("name")}")
         }
         println(game_state.getJSONArray("players").get(4).get("stack"))
         game_state.get("tournament_id")
