@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
                     "Missing game_state!"
                 } else {
                     val json = JSONObject(gameState.toString())
-                    player.betRequest(json)
+                    player.betRequest(json).toString()
                 }
             }
             "showdown" -> {
