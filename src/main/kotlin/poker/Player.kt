@@ -52,9 +52,8 @@ class Player {
                     }
                 }
             }
-        } catch (e: Exception){
             return 0
-        }finally{
+        } catch (e: Exception){
             return 0
         }
     }
