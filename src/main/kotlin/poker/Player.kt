@@ -6,6 +6,7 @@ class Player {
 
     fun betRequest(game_state: JSONObject): Int {
         println("chipchasers0")
+        JSONArray pets = json.getJSONArray("players");
         println(game_state.getString("round"))
         println(game_state.getString("bet_index"))
         println(game_state.getString("small_blind"))
